@@ -2585,6 +2585,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.68, y: 2.646814, z: 2.0217257}
   m_Center: {x: 1.3440349, y: -0.041527364, z: 0.8}
+--- !u!114 &257225177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257225172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63902f7f4d1c8c4d91c3d73e59cffba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &257225178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257225172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - STAY BACK! That place is where the wolves reside during the day.
+--- !u!65 &257225179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257225172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1539364, y: 4.2, z: 2.0217252}
+  m_Center: {x: 1.3440392, y: -0.041527033, z: -0.06}
 --- !u!4 &265168208 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: db85bc02e2bd37242b8f8b0a9ab052fd, type: 3}
@@ -2927,6 +2965,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.68, y: 2.646814, z: 2.0217257}
   m_Center: {x: 0.32, y: -0.041527364, z: 0.8}
+--- !u!114 &322947456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 322947451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63902f7f4d1c8c4d91c3d73e59cffba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &322947457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 322947451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - STAY BACK! That place is where the wolves reside during the day.
+--- !u!65 &322947458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 322947451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1539373, y: 4.2, z: 2.0217261}
+  m_Center: {x: 1.3440336, y: -0.04152715, z: -0.06}
 --- !u!1001 &326127942
 Prefab:
   m_ObjectHideFlags: 0
@@ -6376,48 +6452,6 @@ Prefab:
     - {fileID: 64490952726440828, guid: 037ae43b5557f7b40a4081aebdc6ee27, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 037ae43b5557f7b40a4081aebdc6ee27, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &716761911
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.223162
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &747054562
 Prefab:
   m_ObjectHideFlags: 0
@@ -8340,6 +8374,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.68, y: 2.646814, z: 2.0217257}
   m_Center: {x: 1.3440349, y: -0.041527364, z: 0.8}
+--- !u!114 &1104642348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104642343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63902f7f4d1c8c4d91c3d73e59cffba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1104642349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104642343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - STAY BACK! That place is where the wolves reside during the day.
+--- !u!65 &1104642350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104642343}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.153936, y: 4.2, z: 2.021725}
+  m_Center: {x: 1.3440372, y: -0.04152701, z: -0.06}
 --- !u!1001 &1112128915
 Prefab:
   m_ObjectHideFlags: 0
@@ -10439,52 +10511,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1355136843}
---- !u!1001 &1365363191
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.223162
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716794524527348, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_Name
-      value: WolfEntity (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1374305660
 Prefab:
   m_ObjectHideFlags: 0
@@ -13170,52 +13196,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3a1e2851f18dc0419515cdc5f9d7e03, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1792588069
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.223162
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389975724400198, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716794524527348, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-      propertyPath: m_Name
-      value: WolfEntity (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d2f068cfadb95bb4a8e5951c7a1b039d, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1796284222
 Prefab:
   m_ObjectHideFlags: 0
@@ -15115,6 +15095,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.68, y: 2.646814, z: 2.0217257}
   m_Center: {x: 1.3440349, y: -0.041527364, z: 0.8}
+--- !u!114 &2084161526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084161521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63902f7f4d1c8c4d91c3d73e59cffba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2084161527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084161521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - STAY BACK! That place is where the wolves reside during the day.
+--- !u!65 &2084161528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084161521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.153934, y: 4.2, z: 2.0217257}
+  m_Center: {x: 1.3440349, y: -0.041527364, z: -0.06}
 --- !u!1001 &2092387116
 Prefab:
   m_ObjectHideFlags: 0

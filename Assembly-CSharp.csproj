@@ -116,6 +116,7 @@
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\TimeOfDay.cs" />
      <Compile Include="Assets\Scripts\WolfHealth.cs" />
+     <Compile Include="Assets\TriggerDialogueCollision.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
