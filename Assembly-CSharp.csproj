@@ -99,6 +99,8 @@
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\Scripts\AIChicken.cs" />
      <Compile Include="Assets\Scripts\AIWolf.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\CameraBob.cs" />
      <Compile Include="Assets\Scripts\CameraRotation.cs" />
      <Compile Include="Assets\Scripts\ChickenCount.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
@@ -108,6 +110,7 @@
      <Compile Include="Assets\Scripts\PlayerGetHurt.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\TimeOfDay.cs" />
      <Compile Include="Assets\Scripts\WolfHealth.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />

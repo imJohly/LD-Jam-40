@@ -21,8 +21,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update()
 	{
-		var fps = 1.0 / Time.deltaTime;
-		print("FPS: " + fps);
+		// var fps = 1.0 / Time.deltaTime;
+		// print("FPS: " + fps);
 
 		if(transform.position.y < -200)
 			transform.position = new Vector3(transform.position.x, 200, transform.position.z);
@@ -47,5 +47,24 @@ public class PlayerMovement : MonoBehaviour {
 			movement.y = 0;
 
 		controller.Move(movement * Time.deltaTime);
+
+		if(new Vector3(controller.velocity.x, 0, controller.velocity.z).magnitude > 0.1f && controller.isGrounded)
+			StartCoroutine(Walking());
+
+		if(controller.velocity.magnitude <= 0)
+			AudioManager.instance.Stop("Walking");
+
+	}
+
+	bool running;
+	IEnumerator Walking()
+	{
+		if(running == false)
+		{
+			running = true;
+			AudioManager.instance.Play("Walking");
+			yield return new WaitForSeconds(0.5f);
+			running = false;
+		}
 	}
 }

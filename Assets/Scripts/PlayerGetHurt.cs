@@ -9,6 +9,7 @@ public class PlayerGetHurt : MonoBehaviour {
 		if(col.tag == "Wolf" && col.GetComponent<AIWolf>().curState == AIWolf.State.Attack)
 		{
 			FindObjectOfType<PlayerHealth>().TakeDamage(1);
+			AudioManager.instance.Play("Hurt");
 		}
 	}
 }

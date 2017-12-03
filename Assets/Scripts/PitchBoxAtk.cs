@@ -23,6 +23,7 @@ public class PitchBoxAtk : MonoBehaviour {
 			direction *= 15;
 			direction.y = 3;
 			
+			col.GetComponent<Rigidbody>().velocity = Vector3.zero;
 			col.GetComponent<WolfHealth>().TakeDamage(1);
 			col.GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);
 			col.GetComponent<Rigidbody>().drag = 0;

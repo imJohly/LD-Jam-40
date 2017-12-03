@@ -18,7 +18,8 @@ public class AIWolf : MonoBehaviour {
 
 	public delegate void OnDying();
 	public OnDying OnDeath;
-
+	[Space]
+	public LayerMask groundLayer;
 	Transform retreatPos;
 	void Start()
 	{
@@ -39,6 +40,7 @@ public class AIWolf : MonoBehaviour {
 			{
 				OnDeath();
 			}
+			Destroy(gameObject);
 		}
 
 		var heading = target.position - transform.position;
@@ -98,8 +100,8 @@ public class AIWolf : MonoBehaviour {
 		heading.y = 0;
 		var rotation = Quaternion.LookRotation(heading);
 		transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 3f);
-
-		if(running == false)
+  
+		if(running == false && Physics.Raycast(transform.position, Vector3.down, 2.1f, groundLayer))
 		{
 			rigid.drag = 2;
 
@@ -111,11 +113,13 @@ public class AIWolf : MonoBehaviour {
 
 			direction.Normalize();
 			direction *= moveSpeed * 5;
-			direction.y = 10;
+			direction.y = 6;
 
 			rigid.AddForce(direction, ForceMode.Impulse);
 
 			anim.SetTrigger("Attack");
+
+			AudioManager.instance.Play("Growl");
 
 			yield return new WaitForSeconds(1);
 			rigid.drag = 0;
@@ -127,10 +131,11 @@ public class AIWolf : MonoBehaviour {
 	{
 		StopAllCoroutines();
 
-		var heading = new Vector3(retreatPos.position.x, 0, retreatPos.position.z) - new Vector3(transform.position.x, 0, transform.position.z);
+		var heading = retreatPos.position - transform.position;
 		heading.y = 0;
 		var rotation = Quaternion.LookRotation(heading);
 		transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 3f);
+		
 		var distance = heading.magnitude;
 		var direction = heading / distance;
 

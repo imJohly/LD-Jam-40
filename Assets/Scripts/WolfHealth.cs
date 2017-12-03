@@ -23,5 +23,9 @@ public class WolfHealth : MonoBehaviour {
 	public void TakeDamage(int amount)
 	{
 		curHealth -= amount;
+		if(curHealth > 0)
+			AudioManager.instance.Play("Wolf Pain");
+		if(curHealth == 0)
+			AudioManager.instance.Play("Wolf Retreat");
 	}
 }

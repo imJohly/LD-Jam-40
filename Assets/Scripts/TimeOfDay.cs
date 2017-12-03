@@ -96,6 +96,7 @@ public class TimeOfDay : MonoBehaviour {
 					done = true;
 					ToNight();
 					FindObjectOfType<PlayerHealth>().AddHealth(1);
+					AudioManager.instance.Play("Sleep");
 				}
 			}
 		}
@@ -105,7 +106,7 @@ public class TimeOfDay : MonoBehaviour {
 			text.SetActive(false);
 		}
 	}
-
+	
 	bool running;
 	IEnumerator NightWolfSpawning()
 	{
