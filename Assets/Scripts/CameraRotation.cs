@@ -22,10 +22,10 @@ public class CameraRotation : MonoBehaviour {
 		Cursor.lockState = CursorLockMode.Locked;
 	}
 
-	void FixedUpdate()
+	void Update()
 	{
-		if(Input.GetMouseButtonDown(0))
-			Cursor.lockState = CursorLockMode.Locked;
+		if(Input.GetKeyDown(KeyCode.Escape))
+			Cursor.lockState = CursorLockMode.None;
 
 		float rot = Input.GetAxis("Mouse X") * sensitivity;
 		transform.parent.Rotate(0, rot, 0);
@@ -37,5 +37,22 @@ public class CameraRotation : MonoBehaviour {
 		
 		currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(rotY, rotX), ref rotationSmoothVelocity, rotationSmoothTime);
 		transform.eulerAngles = currentRotation;
+	}
+
+	void FixedUpdate()
+	{
+		if(Input.GetMouseButtonDown(0))
+			Cursor.lockState = CursorLockMode.Locked;
+
+		// float rot = Input.GetAxis("Mouse X") * sensitivity;
+		// transform.parent.Rotate(0, rot, 0);
+
+		// rotX += Input.GetAxis("Mouse X") * sensitivity;
+		// rotY -= Input.GetAxis("Mouse Y") * sensitivity;
+
+		// rotY = Mathf.Clamp(rotY, -maxY, minY);
+		
+		// currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(rotY, rotX), ref rotationSmoothVelocity, rotationSmoothTime);
+		// transform.eulerAngles = currentRotation;
 	}
 }

@@ -60,13 +60,13 @@ MonoBehaviour:
     loop: 1
   - name: Hurt
     clip: {fileID: 8300000, guid: 13d4fc27a4773104dac60128dd3e4428, type: 3}
-    volume: 0.2
+    volume: 0.3
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Sleep
     clip: {fileID: 8300000, guid: 9b17cd6ee219465489da5a4f35e791d6, type: 3}
-    volume: 0.2
+    volume: 0.3
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -102,7 +102,13 @@ MonoBehaviour:
     loop: 0
   - name: Beep
     clip: {fileID: 8300000, guid: efd8718e383c3c8489ace0a2fe7e45af, type: 3}
-    volume: 1
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Add Chook
+    clip: {fileID: 8300000, guid: 1a3405600e54f7e49a589e39f289767e, type: 3}
+    volume: 0.3
     pitch: 1
     source: {fileID: 0}
     loop: 0

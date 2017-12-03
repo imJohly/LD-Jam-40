@@ -36,13 +36,15 @@ public class PlayerHealth : MonoBehaviour {
 			deadScreen.SetActive(true);
 			normScreen.SetActive(false);
 
-			done = true;
-
 			GetComponent<PlayerMovement>().enabled = false;
 			FindObjectOfType<CameraRotation>().enabled = false;
 			FindObjectOfType<PickupChicken>().enabled = false;
 			GetComponent<CharacterController>().enabled = false;
 			gameObject.AddComponent<Rigidbody>();
+
+			Cursor.lockState = CursorLockMode.None;
+
+			done = true;
 		}
 
 		if(curHealth <= 0)

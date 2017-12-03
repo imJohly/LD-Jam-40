@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 114175798748200886}
   - component: {fileID: 114989596770949584}
   - component: {fileID: 95681429437879400}
+  - component: {fileID: 114722179272694926}
+  - component: {fileID: 114107866780413642}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -59,6 +61,7 @@ GameObject:
   - component: {fileID: 23150222486547026}
   - component: {fileID: 95868304469028462}
   - component: {fileID: 65277380128446340}
+  - component: {fileID: 114178150957314122}
   m_Layer: 0
   m_Name: PitchFork
   m_TagString: Untagged
@@ -113,6 +116,8 @@ GameObject:
   - component: {fileID: 114981326293649970}
   - component: {fileID: 114395310422310814}
   - component: {fileID: 95201142273063822}
+  - component: {fileID: 114547146647835866}
+  - component: {fileID: 114749495429813752}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -212,7 +217,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.25735295, g: 0.9385397, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.25735295, g: 0.9385397, b: 1, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -290,7 +295,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.19, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.65, z: 0}
 --- !u!65 &65646022538844664
 BoxCollider:
@@ -398,6 +403,20 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114107866780413642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316468850861574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5acd230d0404994481a2ff5143b5a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobbingSpeed: 0.35
+  bobbingAmount: 0.1
+  midpoint: 0.7
 --- !u!114 &114175798748200886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -413,6 +432,17 @@ MonoBehaviour:
   maxY: 90
   sensitivity: 2
   rotationSmoothTime: 0.05
+--- !u!114 &114178150957314122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513506604084618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6236450225883c43846770cdf9bb8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114227225359600386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -447,6 +477,63 @@ MonoBehaviour:
   - {fileID: 21300002, guid: 2e23b0a146009e44899613e3da2781e4, type: 3}
   - {fileID: 21300000, guid: 2e23b0a146009e44899613e3da2781e4, type: 3}
   chickenText: {fileID: 0}
+  deadScreen: {fileID: 0}
+  normScreen: {fileID: 0}
+--- !u!114 &114547146647835866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950196297124222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStart: 1
+  dialogue:
+    name: 
+    sentences:
+    - Oh no! It looks like your 21 chickens have escaped!
+    - First move with the WASD keys.
+    - Good! Now look at the CHICKEN HEAD on the bottom left of the screen...
+    - That shows you the NUMBER OF CHICKENS currently inside your chicken coop.
+    - The hearts on the bottom are your lives, of course.
+    - Run out those guys and your dead!
+    - Ok! So only 3 chickens will show up each day and they're found somewhere on
+      this island.
+    - Once you find one, RIGHT CLICK them to grab them...
+    - Then walk over to your chicken coop and CHOOK them in.
+    - See what I did there! No?
+    - Now go out there and find those chooks!
+    - 'Press ESCAPE to enter the Pause Menu.
+
+      Good Luck!'
+--- !u!114 &114722179272694926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316468850861574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 77d5162bb91b39c4198605cfac127fc1, type: 2}
+--- !u!114 &114749495429813752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950196297124222}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 531b9d503cc9ab6428835e2779a2e58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fonts:
+  - {fileID: 12800000, guid: 7708dd8f05d1c664eaf1d2de26d7f845, type: 3}
 --- !u!114 &114780259699465792
 MonoBehaviour:
   m_ObjectHideFlags: 1

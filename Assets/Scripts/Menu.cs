@@ -12,6 +12,9 @@ public class Menu : MonoBehaviour {
 
 	void Update()
 	{
+		if(pauseScreen == null)
+			Cursor.lockState = CursorLockMode.None;
+
 		if(pauseScreen != null)
 		{
 			if(Player.inst.GetComponent<PlayerHealth>().curHealth <= 0 || Player.inst.chickenAmount >= 21)
@@ -41,7 +44,6 @@ public class Menu : MonoBehaviour {
 
 				pauseScreen.SetActive(false);
 				normScreen.SetActive(true);
-				GameObject.FindGameObjectWithTag("Dialogue").SetActive(true);
 			}
 		}
 	}

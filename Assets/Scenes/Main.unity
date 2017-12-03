@@ -489,7 +489,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 45290020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000022888184, y: -145.95418, z: 0}
+  m_LocalPosition: {x: 0.000022888184, y: -241.10448, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 171981685}
@@ -2607,6 +2607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart: 0
   dialogue:
     name: 
     sentences:
@@ -2987,6 +2988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart: 0
   dialogue:
     name: 
     sentences:
@@ -4470,7 +4472,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501885507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000022888184, y: -145.9542, z: 0}
+  m_LocalPosition: {x: 0.000022888184, y: -241.10449, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1645343465}
@@ -4650,8 +4652,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510462862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 545, y: 306.5, z: 0}
-  m_LocalScale: {x: 1.3625, y: 1.3625, z: 1.3625}
+  m_LocalPosition: {x: 383, y: 306.5, z: 0}
+  m_LocalScale: {x: 0.9575, y: 0.9575, z: 0.9575}
   m_Children:
   - {fileID: 434848728}
   - {fileID: 1745216977}
@@ -5301,7 +5303,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 575998946}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000022888184, y: -191.95413, z: 0}
+  m_LocalPosition: {x: 0.000022888184, y: -287.10443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 134630035}
@@ -8396,6 +8398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart: 0
   dialogue:
     name: 
     sentences:
@@ -9156,6 +9159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart: 0
   dialogue:
     name: 
     sentences:
@@ -9761,6 +9765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart: 0
   dialogue:
     name: 
     sentences:
@@ -9999,11 +10004,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.size
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4657551128548794, guid: 4473fe859f8b83b42901a37ff21b1823, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10035,41 +10035,6 @@ Prefab:
     - target: {fileID: 4657551128548794, guid: 4473fe859f8b83b42901a37ff21b1823, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[8].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[1].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[2].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[9].name
-      value: Add Chook
-      objectReference: {fileID: 0}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[9].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a3405600e54f7e49a589e39f289767e, type: 3}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[9].volume
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114222827070072070, guid: 4473fe859f8b83b42901a37ff21b1823,
-        type: 2}
-      propertyPath: sounds.Array.data[9].pitch
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4473fe859f8b83b42901a37ff21b1823, type: 2}
@@ -10895,53 +10860,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 280f4c808a9b6be43b1a73c6cde8cc96, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1429741620 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1950196297124222, guid: 3787e3096d22caa4e80654efe4b9adc9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894120036}
---- !u!114 &1429741621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1429741620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - Oh no! It looks like your 21 chickens have escaped!
-    - First move with the WASD keys.
-    - Good! Now look at the CHICKEN HEAD on the bottom left of the screen...
-    - That shows you the NUMBER OF CHICKENS currently inside your chicken coop.
-    - The hearts on the bottom are your lives, of course.
-    - Run out those guys and your dead!
-    - Ok! So only 3 chickens will show up each day and they're found somewhere on
-      this island.
-    - Once you find one, RIGHT CLICK them to grab them...
-    - Then walk over to your chicken coop and CHOOK them in.
-    - See what I did there! No?
-    - Now go out there and find those chooks!
-    - 'Press ESCAPE to enter the Pause Menu.
-
-      Good Luck!'
---- !u!114 &1429741624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1429741620}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531b9d503cc9ab6428835e2779a2e58d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fonts:
-  - {fileID: 12800000, guid: 7708dd8f05d1c664eaf1d2de26d7f845, type: 3}
 --- !u!1001 &1432464299
 Prefab:
   m_ObjectHideFlags: 0
@@ -11041,7 +10959,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459614370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000022888184, y: -145.95418, z: 0}
+  m_LocalPosition: {x: 0.000022888184, y: -241.10448, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 366870997}
@@ -11451,7 +11369,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1516982524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 209.95413, z: 0}
+  m_LocalPosition: {x: 0, y: 305.10443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1080162807}
@@ -12763,7 +12681,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745216976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -148.95413, z: 0}
+  m_LocalPosition: {x: 0, y: -244.10443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 510462866}
@@ -13506,7 +13424,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1829909710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -214.95413, z: 0}
+  m_LocalPosition: {x: 0, y: -310.10443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1080162807}
@@ -13686,42 +13604,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 280f4c808a9b6be43b1a73c6cde8cc96, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1855462425 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1316468850861574, guid: 3787e3096d22caa4e80654efe4b9adc9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894120036}
 --- !u!95 &1855462432 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95681429437879400, guid: 3787e3096d22caa4e80654efe4b9adc9,
     type: 2}
   m_PrefabInternal: {fileID: 1894120036}
---- !u!114 &1855462433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1855462425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 77d5162bb91b39c4198605cfac127fc1, type: 2}
---- !u!114 &1855462434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1855462425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5acd230d0404994481a2ff5143b5a15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bobbingSpeed: 0.35
-  bobbingAmount: 0.1
-  midpoint: 0.7
 --- !u!1001 &1876391215
 Prefab:
   m_ObjectHideFlags: 0
@@ -13830,6 +13717,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 95201142273063822, guid: 3787e3096d22caa4e80654efe4b9adc9,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f6171d86bda65ea40bbcc52c47247787, type: 2}
     - target: {fileID: 114395310422310814, guid: 3787e3096d22caa4e80654efe4b9adc9,
         type: 2}
       propertyPath: HeartUI
@@ -13840,31 +13732,6 @@ Prefab:
       propertyPath: chickenText
       value: 
       objectReference: {fileID: 928065932}
-    - target: {fileID: 95201142273063822, guid: 3787e3096d22caa4e80654efe4b9adc9,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f6171d86bda65ea40bbcc52c47247787, type: 2}
-    - target: {fileID: 114175798748200886, guid: 3787e3096d22caa4e80654efe4b9adc9,
-        type: 2}
-      propertyPath: sensitivity
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 65277380128446340, guid: 3787e3096d22caa4e80654efe4b9adc9,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65277380128446340, guid: 3787e3096d22caa4e80654efe4b9adc9,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 65277380128446340, guid: 3787e3096d22caa4e80654efe4b9adc9,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114395310422310814, guid: 3787e3096d22caa4e80654efe4b9adc9,
         type: 2}
       propertyPath: deadScreen
@@ -13875,11 +13742,6 @@ Prefab:
       propertyPath: normScreen
       value: 
       objectReference: {fileID: 1080162806}
-    - target: {fileID: 20048622535939716, guid: 3787e3096d22caa4e80654efe4b9adc9,
-        type: 2}
-      propertyPath: m_BackGroundColor.a
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3787e3096d22caa4e80654efe4b9adc9, type: 2}
   m_IsPrefabParent: 0
@@ -14298,22 +14160,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7b92c0c4cdc041a45acdb32d8da34096, type: 3}
---- !u!1 &1965389834 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1513506604084618, guid: 3787e3096d22caa4e80654efe4b9adc9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894120036}
---- !u!114 &1965389840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1965389834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6236450225883c43846770cdf9bb8d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1972126093
 Prefab:
   m_ObjectHideFlags: 0
@@ -14489,7 +14335,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978826696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400, y: -224.95413, z: 0}
+  m_LocalPosition: {x: -400, y: -320.10443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 928065934}
@@ -15117,6 +14963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d0d0f6d92d81d439e30c9c73648088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart: 0
   dialogue:
     name: 
     sentences:
