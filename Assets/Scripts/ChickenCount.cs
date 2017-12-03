@@ -19,6 +19,8 @@ public class ChickenCount : MonoBehaviour {
 		normScreen.SetActive(true);
 	}
 
+	int lastCount;
+
 	void Update()
 	{
 		chickens = Physics.OverlapBox(transform.position, size, transform.rotation, chickenLayer);
@@ -27,6 +29,12 @@ public class ChickenCount : MonoBehaviour {
 		if(Player.inst.chickenAmount >= 21)
 		{
 			Win();
+		}
+
+		if(chickens.Length != lastCount)
+		{
+			AudioManager.instance.Play("Add Chook");
+			lastCount = chickens.Length;
 		}
 	}
 
@@ -44,17 +52,17 @@ public class ChickenCount : MonoBehaviour {
 	{
 		Cursor.lockState = CursorLockMode.None;
 
+		winScreen.SetActive(true);
+		normScreen.SetActive(false);
+
 		if(done == false)		
 		{
-			winScreen.SetActive(true);
-			normScreen.SetActive(false);
 			done = true;
 
 			Player.inst.GetComponent<PlayerMovement>().enabled = false;
 			FindObjectOfType<CameraRotation>().enabled = false;
 			FindObjectOfType<PickupChicken>().enabled = false;
 
-			AudioManager.instance.Stop("Main Theme");
 			AudioManager.instance.Play("Win Theme");
 		}
 	}

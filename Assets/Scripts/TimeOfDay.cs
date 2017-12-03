@@ -39,25 +39,25 @@ public class TimeOfDay : MonoBehaviour {
 		switch(curDay)
 		{
 			case 1:
-				day.text = "Monday";
+				day.text = "MONDAY";
 				break;
 			case 2:
-				day.text = "Tuesday";
+				day.text = "TUESDAY";
 				break;
 			case 3:
-				day.text = "Wednesday";
+				day.text = "WEDNESDAY";
 				break;
 			case 4:
-				day.text = "Thursday";
+				day.text = "THURSDAY";
 				break;
 			case 5:
-				day.text = "Friday";
+				day.text = "FRIDAY";
 				break;
 			case 6:
-				day.text = "Saturday";
+				day.text = "SATURDAY";
 				break;
 			case 7:
-				day.text = "Sunday";
+				day.text = "SUNDAY";
 				break;
 		}
 	}

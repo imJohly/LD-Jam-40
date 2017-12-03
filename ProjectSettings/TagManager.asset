@@ -7,6 +7,7 @@ TagManager:
   - Chicken
   - Boundary
   - Wolf
+  - Dialogue
   layers:
   - Default
   - TransparentFX

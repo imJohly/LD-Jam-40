@@ -32,7 +32,7 @@ public class AIWolf : MonoBehaviour {
 		anim = transform.GetChild(0).GetComponent<Animator>();
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		if(transform.position.y < -200)
 		{

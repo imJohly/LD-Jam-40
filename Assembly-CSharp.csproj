@@ -103,6 +103,9 @@
      <Compile Include="Assets\Scripts\CameraBob.cs" />
      <Compile Include="Assets\Scripts\CameraRotation.cs" />
      <Compile Include="Assets\Scripts\ChickenCount.cs" />
+     <Compile Include="Assets\Scripts\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\PickupChicken.cs" />
      <Compile Include="Assets\Scripts\PitchBoxAtk.cs" />

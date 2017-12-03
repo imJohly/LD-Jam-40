@@ -36,7 +36,7 @@ public class AIChicken : MonoBehaviour {
 		}
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		var lookPos = wanderPoints[curPoint] - transform.position;
 		lookPos.y = 0;

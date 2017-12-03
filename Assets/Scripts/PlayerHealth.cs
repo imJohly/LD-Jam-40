@@ -27,6 +27,8 @@ public class PlayerHealth : MonoBehaviour {
 
 	bool done;
 	bool done2;
+	bool done3;
+	bool done4;
 	void Update()
 	{
 		if(curHealth <= 0 && done == false)
@@ -50,7 +52,22 @@ public class PlayerHealth : MonoBehaviour {
 			curHealth = player.health;
 		
 		chickenText.text = Player.inst.chickenAmount.ToString();
-		
+
+		if(Player.inst.GetComponent<PlayerHealth>().curHealth <= 0 || Player.inst.chickenAmount >= 21)
+		{
+
+			return;
+		}
+		if(done4 == false && curHealth == 4)
+		{
+			GameObject.Find("HurtD").GetComponent<DialogueTrigger>().TriggerDialogue();
+			done4 = true;
+		}
+		if(Player.inst.chickenAmount >= FindObjectOfType<ChickenCount>().outChicken && done3 == false && FindObjectOfType<TimeOfDay>().curDay == 1)
+		{
+			GameObject.Find("BeepD").GetComponent<DialogueTrigger>().TriggerDialogue();
+			done3 = true;
+		}
 		if(Player.inst.chickenAmount >= FindObjectOfType<ChickenCount>().outChicken && done2 == false)
 		{
 			chickenText.color = Color.red;
